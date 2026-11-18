@@ -1,0 +1,177 @@
+{
+  "validated_experiment_checksums_sha256": "436546472d5c8d42206084e0605192f146ffc17760b2630cf2dea06cd04b02d1",
+  "compatible_run_inputs_sha256": "67748542200ee3e5a5c88f8b71dcf9c01f4456dc82096b2efefd3f4fb0cc0147",
+  "models": {
+    "llama": {
+      "summary": {
+        "questions": 131,
+        "clean_correct": 97,
+        "eligible": 168,
+        "identical_lead_in_pairs": 96,
+        "decision_correct": 68,
+        "control_correct": [
+          8,
+          16,
+          8,
+          15,
+          7
+        ],
+        "decision_percent": 40.476190476190474,
+        "control_mean_percent": 6.428571428571429,
+        "identity_checked": true,
+        "published_counts_match": true,
+        "published_percentages_match": true
+      },
+      "replies_compared": 2318,
+      "token_sequence_changes": 0,
+      "outcome_changes": 0,
+      "runtime": {
+        "model_key": "llama",
+        "repo_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "revision": "8afb486c1db24fe5011ec46dfbe5b5dccdb575c2",
+        "python": "3.11.15",
+        "torch": "2.11.0+cu128",
+        "transformers": "4.57.6",
+        "cuda": "12.8",
+        "model_class": "LlamaForCausalLM",
+        "dtype": "torch.bfloat16",
+        "attention_implementation": "sdpa",
+        "device": "cuda:0",
+        "checksums_sha256": "436546472d5c8d42206084e0605192f146ffc17760b2630cf2dea06cd04b02d1",
+        "seconds_this_attempt": 475.7309911902994,
+        "gpu": "NVIDIA A800-SXM4-80GB",
+        "peak_allocated_gib": 15.028201580047607,
+        "peak_reserved_gib": 15.169921875
+      }
+    },
+    "gemma": {
+      "summary": {
+        "questions": 131,
+        "clean_correct": 101,
+        "eligible": 122,
+        "identical_lead_in_pairs": 83,
+        "decision_correct": 29,
+        "control_correct": [
+          0,
+          4,
+          2,
+          0,
+          5
+        ],
+        "decision_percent": 23.770491803278688,
+        "control_mean_percent": 1.8032786885245902,
+        "identity_checked": true,
+        "published_counts_match": true,
+        "published_percentages_match": true
+      },
+      "replies_compared": 2042,
+      "token_sequence_changes": 0,
+      "outcome_changes": 0,
+      "runtime": {
+        "model_key": "gemma",
+        "repo_id": "google/gemma-3-12b-it",
+        "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+        "python": "3.11.15",
+        "torch": "2.11.0+cu128",
+        "transformers": "4.57.6",
+        "cuda": "12.8",
+        "model_class": "Gemma3ForConditionalGeneration",
+        "dtype": "torch.bfloat16",
+        "attention_implementation": "sdpa",
+        "device": "cuda:0",
+        "checksums_sha256": "436546472d5c8d42206084e0605192f146ffc17760b2630cf2dea06cd04b02d1",
+        "seconds_this_attempt": 981.545582473278,
+        "gpu": "NVIDIA A800-SXM4-80GB",
+        "peak_allocated_gib": 22.979851722717285,
+        "peak_reserved_gib": 23.251953125
+      }
+    },
+    "olmo": {
+      "summary": {
+        "questions": 131,
+        "clean_correct": 87,
+        "eligible": 152,
+        "identical_lead_in_pairs": 128,
+        "decision_correct": 54,
+        "control_correct": [
+          2,
+          1,
+          5,
+          2,
+          1
+        ],
+        "decision_percent": 35.526315789473685,
+        "control_mean_percent": 1.4473684210526316,
+        "identity_checked": true,
+        "published_counts_match": true,
+        "published_percentages_match": true
+      },
+      "replies_compared": 2222,
+      "token_sequence_changes": 0,
+      "outcome_changes": 0,
+      "runtime": {
+        "model_key": "olmo",
+        "repo_id": "allenai/OLMo-2-1124-7B-Instruct",
+        "revision": "470b1fba1ae01581f270116362ee4aa1b97f4c84",
+        "python": "3.11.15",
+        "torch": "2.11.0+cu128",
+        "transformers": "4.57.6",
+        "cuda": "12.8",
+        "model_class": "Olmo2ForCausalLM",
+        "dtype": "torch.bfloat16",
+        "attention_implementation": "sdpa",
+        "device": "cuda:0",
+        "checksums_sha256": "436546472d5c8d42206084e0605192f146ffc17760b2630cf2dea06cd04b02d1",
+        "seconds_this_attempt": 388.85699758678675,
+        "gpu": "NVIDIA A800-SXM4-80GB",
+        "peak_allocated_gib": 13.764835357666016,
+        "peak_reserved_gib": 13.861328125
+      }
+    },
+    "qwen": {
+      "summary": {
+        "questions": 131,
+        "clean_correct": 80,
+        "eligible": 138,
+        "identical_lead_in_pairs": 100,
+        "decision_correct": 27,
+        "control_correct": [
+          4,
+          2,
+          6,
+          4,
+          5
+        ],
+        "decision_percent": 19.565217391304348,
+        "control_mean_percent": 3.0434782608695654,
+        "identity_checked": true,
+        "published_counts_match": true,
+        "published_percentages_match": true
+      },
+      "replies_compared": 2138,
+      "token_sequence_changes": 0,
+      "outcome_changes": 0,
+      "runtime": {
+        "model_key": "qwen",
+        "repo_id": "Qwen/Qwen3-4B-Instruct-2507",
+        "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+        "python": "3.11.15",
+        "torch": "2.11.0+cu128",
+        "transformers": "4.57.6",
+        "cuda": "12.8",
+        "model_class": "Qwen3ForCausalLM",
+        "dtype": "torch.bfloat16",
+        "attention_implementation": "sdpa",
+        "device": "cuda:0",
+        "checksums_sha256": "436546472d5c8d42206084e0605192f146ffc17760b2630cf2dea06cd04b02d1",
+        "seconds_this_attempt": 1009.7680979147553,
+        "gpu": "NVIDIA A800-SXM4-80GB",
+        "peak_allocated_gib": 7.610469341278076,
+        "peak_reserved_gib": 7.63671875
+      }
+    }
+  },
+  "total_replies_compared": 8720,
+  "prompt_hashes_checked": 5240,
+  "patch_positions_checked": 580
+}

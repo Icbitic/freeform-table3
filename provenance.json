@@ -1,0 +1,28 @@
+{
+  "description": "Hashes of original input and output artifacts used to assemble the reproduction. Infrastructure identifiers are omitted.",
+  "original_dataset_sha256": "7c91182e2b1e907beb3da2e9e092c862d4d9027baa53ade2065a5dc617ec1267",
+  "models": {
+    "llama": {
+      "baseline_outputs_sha256": "00630ab4044946337c1d8bd558b846cafb07decf2874fd5aa0ef5c38c577318e",
+      "control_outputs_sha256": "0f8dfb29c3407e37b7fcd69ff9deab0021b9ab7d91ebf63bc6e1bc3b9cebbb64"
+    },
+    "gemma": {
+      "baseline_outputs_sha256": "167516dd8295f879f696b5173c6a85368272043699674fc5ef8d0f3752136d53",
+      "control_outputs_sha256": "59b200676a4f46aad173711df06cfc4293497d80999916ed44162d43695fdef8"
+    },
+    "olmo": {
+      "baseline_outputs_sha256": "8aafc2b08afb0b08ba99b7dc14147d0ad108ffd9d1eb251feb952c72f55fd0d9",
+      "control_outputs_sha256": "e5e183f57697cb212492f6e2d87fda4ee80eb17f20c63f702bb292e2eca5742a"
+    },
+    "qwen": {
+      "baseline_outputs_sha256": "7b0b8974981357075276622d908749571411f49a486f5c63e1cebd477c60e830",
+      "control_outputs_sha256": "e290dd69824827f359134afc544674c902abaaafdc5007e85c04d2ada76b328c"
+    }
+  },
+  "implementation_source_sha256": {
+    "run_level1.py": "ae0938006b6be5898852f862438037ac5fa77e8a4d63324e6deebf8342d89713",
+    "run_decision_controls.py": "7b13f684ca728bb86aea5d9321fc274daeff7e1c6ef07e0b867c8650dcd03731",
+    "patching.py": "2be6d865d01fdeea14b442ab6699eb973cf7735a127d03c6f3ff052e1964a0e9",
+    "prompts.py": "3a6bd5a4cfebd1b240de93038cbd15e5baea16bddb95dcc0e16c61e73ab8a4ef"
+  }
+}

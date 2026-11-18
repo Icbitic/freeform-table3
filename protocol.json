@@ -1,0 +1,597 @@
+{
+  "max_new_tokens": 32,
+  "dtype": "bfloat16",
+  "decoding": "greedy",
+  "include_identical_lead_ins": true,
+  "models": {
+    "llama": {
+      "label": "Llama-3 8B",
+      "repo_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "revision": "8afb486c1db24fe5011ec46dfbe5b5dccdb575c2",
+      "selected_heads": [
+        [
+          17,
+          24
+        ],
+        [
+          15,
+          8
+        ],
+        [
+          15,
+          11
+        ],
+        [
+          17,
+          25
+        ],
+        [
+          17,
+          26
+        ]
+      ],
+      "control_heads": {
+        "1": [
+          [
+            15,
+            4
+          ],
+          [
+            15,
+            18
+          ],
+          [
+            17,
+            3
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            17,
+            21
+          ]
+        ],
+        "2": [
+          [
+            15,
+            2
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            17,
+            1
+          ],
+          [
+            17,
+            5
+          ],
+          [
+            17,
+            28
+          ]
+        ],
+        "3": [
+          [
+            15,
+            7
+          ],
+          [
+            15,
+            22
+          ],
+          [
+            17,
+            1
+          ],
+          [
+            17,
+            21
+          ],
+          [
+            17,
+            29
+          ]
+        ],
+        "4": [
+          [
+            15,
+            18
+          ],
+          [
+            15,
+            27
+          ],
+          [
+            17,
+            5
+          ],
+          [
+            17,
+            8
+          ],
+          [
+            17,
+            15
+          ]
+        ],
+        "5": [
+          [
+            15,
+            0
+          ],
+          [
+            15,
+            17
+          ],
+          [
+            17,
+            0
+          ],
+          [
+            17,
+            15
+          ],
+          [
+            17,
+            28
+          ]
+        ]
+      },
+      "control_seeds": {
+        "1": "nq2-level2-decision-control-v1:8afb486c1db24fe5011ec46dfbe5b5dccdb575c2:1",
+        "2": "nq2-level2-decision-control-v1:8afb486c1db24fe5011ec46dfbe5b5dccdb575c2:2",
+        "3": "nq2-level2-decision-control-v1:8afb486c1db24fe5011ec46dfbe5b5dccdb575c2:3",
+        "4": "nq2-level2-decision-control-v1:8afb486c1db24fe5011ec46dfbe5b5dccdb575c2:4",
+        "5": "nq2-level2-decision-control-v1:8afb486c1db24fe5011ec46dfbe5b5dccdb575c2:5"
+      },
+      "kv_group_widths": {
+        "15": 4,
+        "17": 4
+      },
+      "chat_template_sha256": "66f092052041d56ef539b6f779861121dfa7c6945ebb69ff7c4a40d56e2c9f90",
+      "eos_ids": [
+        128001,
+        128009
+      ],
+      "expected": {
+        "eligible": 168,
+        "decision_correct": 68,
+        "control_correct": [
+          8,
+          16,
+          8,
+          15,
+          7
+        ]
+      }
+    },
+    "gemma": {
+      "label": "Gemma-3 12B",
+      "repo_id": "google/gemma-3-12b-it",
+      "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+      "selected_heads": [
+        [
+          29,
+          11
+        ],
+        [
+          28,
+          6
+        ]
+      ],
+      "control_heads": {
+        "1": [
+          [
+            28,
+            5
+          ],
+          [
+            29,
+            15
+          ]
+        ],
+        "2": [
+          [
+            28,
+            10
+          ],
+          [
+            29,
+            5
+          ]
+        ],
+        "3": [
+          [
+            28,
+            15
+          ],
+          [
+            29,
+            4
+          ]
+        ],
+        "4": [
+          [
+            28,
+            11
+          ],
+          [
+            29,
+            4
+          ]
+        ],
+        "5": [
+          [
+            28,
+            14
+          ],
+          [
+            29,
+            12
+          ]
+        ]
+      },
+      "control_seeds": {
+        "1": "nq2-level2-decision-control-v1:96b6f1eccf38110c56df3a15bffe176da04bfd80:1",
+        "2": "nq2-level2-decision-control-v1:96b6f1eccf38110c56df3a15bffe176da04bfd80:2",
+        "3": "nq2-level2-decision-control-v1:96b6f1eccf38110c56df3a15bffe176da04bfd80:3",
+        "4": "nq2-level2-decision-control-v1:96b6f1eccf38110c56df3a15bffe176da04bfd80:4",
+        "5": "nq2-level2-decision-control-v1:96b6f1eccf38110c56df3a15bffe176da04bfd80:5"
+      },
+      "kv_group_widths": {
+        "28": 2,
+        "29": 2
+      },
+      "chat_template_sha256": "a5c992cca048607f8a84c3d6ca4eb14bacc19bc1b4b2b3adfe3b987a4569f714",
+      "eos_ids": [
+        1,
+        106
+      ],
+      "expected": {
+        "eligible": 122,
+        "decision_correct": 29,
+        "control_correct": [
+          0,
+          4,
+          2,
+          0,
+          5
+        ]
+      }
+    },
+    "olmo": {
+      "label": "OLMo-2 7B",
+      "repo_id": "allenai/OLMo-2-1124-7B-Instruct",
+      "revision": "470b1fba1ae01581f270116362ee4aa1b97f4c84",
+      "selected_heads": [
+        [
+          18,
+          19
+        ],
+        [
+          18,
+          18
+        ]
+      ],
+      "control_heads": {
+        "1": [
+          [
+            18,
+            3
+          ],
+          [
+            18,
+            13
+          ]
+        ],
+        "2": [
+          [
+            18,
+            13
+          ],
+          [
+            18,
+            31
+          ]
+        ],
+        "3": [
+          [
+            18,
+            15
+          ],
+          [
+            18,
+            23
+          ]
+        ],
+        "4": [
+          [
+            18,
+            8
+          ],
+          [
+            18,
+            14
+          ]
+        ],
+        "5": [
+          [
+            18,
+            4
+          ],
+          [
+            18,
+            24
+          ]
+        ]
+      },
+      "control_seeds": {
+        "1": "nq2-level2-decision-control-v1:470b1fba1ae01581f270116362ee4aa1b97f4c84:1",
+        "2": "nq2-level2-decision-control-v1:470b1fba1ae01581f270116362ee4aa1b97f4c84:2",
+        "3": "nq2-level2-decision-control-v1:470b1fba1ae01581f270116362ee4aa1b97f4c84:3",
+        "4": "nq2-level2-decision-control-v1:470b1fba1ae01581f270116362ee4aa1b97f4c84:4",
+        "5": "nq2-level2-decision-control-v1:470b1fba1ae01581f270116362ee4aa1b97f4c84:5"
+      },
+      "kv_group_widths": {
+        "18": 1
+      },
+      "chat_template_sha256": "f12865aaf152f6978fe525786d54ab0331a2cf0a6e085dfed8a74299fff2396d",
+      "eos_ids": [
+        100257
+      ],
+      "expected": {
+        "eligible": 152,
+        "decision_correct": 54,
+        "control_correct": [
+          2,
+          1,
+          5,
+          2,
+          1
+        ]
+      }
+    },
+    "qwen": {
+      "label": "Qwen3 4B",
+      "repo_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "selected_heads": [
+        [
+          24,
+          31
+        ],
+        [
+          24,
+          29
+        ]
+      ],
+      "control_heads": {
+        "1": [
+          [
+            24,
+            15
+          ],
+          [
+            24,
+            25
+          ]
+        ],
+        "2": [
+          [
+            24,
+            7
+          ],
+          [
+            24,
+            12
+          ]
+        ],
+        "3": [
+          [
+            24,
+            13
+          ],
+          [
+            24,
+            20
+          ]
+        ],
+        "4": [
+          [
+            24,
+            22
+          ],
+          [
+            24,
+            27
+          ]
+        ],
+        "5": [
+          [
+            24,
+            16
+          ],
+          [
+            24,
+            23
+          ]
+        ]
+      },
+      "control_seeds": {
+        "1": "nq2-level2-decision-control-v1:cdbee75f17c01a7cc42f958dc650907174af0554:1",
+        "2": "nq2-level2-decision-control-v1:cdbee75f17c01a7cc42f958dc650907174af0554:2",
+        "3": "nq2-level2-decision-control-v1:cdbee75f17c01a7cc42f958dc650907174af0554:3",
+        "4": "nq2-level2-decision-control-v1:cdbee75f17c01a7cc42f958dc650907174af0554:4",
+        "5": "nq2-level2-decision-control-v1:cdbee75f17c01a7cc42f958dc650907174af0554:5"
+      },
+      "kv_group_widths": {
+        "24": 4
+      },
+      "chat_template_sha256": "c87c39da4214fe8fee1f49f4b54bdb5ae1e1cd5aed22a356f3ffedb59964a715",
+      "eos_ids": [
+        151643,
+        151645
+      ],
+      "expected": {
+        "eligible": 138,
+        "decision_correct": 27,
+        "control_correct": [
+          4,
+          2,
+          6,
+          4,
+          5
+        ]
+      }
+    }
+  },
+  "question_ids": [
+    242,
+    24,
+    221,
+    319,
+    323,
+    44,
+    224,
+    416,
+    58,
+    129,
+    277,
+    442,
+    387,
+    321,
+    103,
+    287,
+    150,
+    28,
+    235,
+    118,
+    165,
+    337,
+    15,
+    269,
+    317,
+    288,
+    302,
+    38,
+    164,
+    108,
+    180,
+    262,
+    297,
+    231,
+    429,
+    17,
+    117,
+    93,
+    459,
+    263,
+    4,
+    285,
+    88,
+    70,
+    5,
+    101,
+    30,
+    481,
+    371,
+    330,
+    256,
+    119,
+    83,
+    143,
+    208,
+    344,
+    238,
+    411,
+    281,
+    334,
+    145,
+    49,
+    152,
+    106,
+    191,
+    33,
+    454,
+    440,
+    73,
+    90,
+    450,
+    159,
+    209,
+    436,
+    175,
+    81,
+    29,
+    86,
+    351,
+    483,
+    399,
+    36,
+    370,
+    325,
+    217,
+    107,
+    245,
+    377,
+    395,
+    293,
+    417,
+    486,
+    249,
+    59,
+    415,
+    328,
+    110,
+    200,
+    94,
+    148,
+    405,
+    300,
+    418,
+    63,
+    41,
+    46,
+    278,
+    124,
+    170,
+    313,
+    320,
+    342,
+    477,
+    422,
+    412,
+    266,
+    104,
+    312,
+    51,
+    350,
+    37,
+    272,
+    128,
+    48,
+    71,
+    258,
+    244,
+    248,
+    132,
+    20,
+    388
+  ],
+  "template": {
+    "system": "Answer factual questions accurately and directly.",
+    "opening": "I have a quick question. Read it, but wait for my next message before answering.",
+    "acknowledgement": "Sure, I'll wait for your next message.",
+    "clean": "I don't have a preferred answer here.",
+    "persuasive_prefix": "Before you answer, let me make the case for the answer I believe:",
+    "persuasive_suffix": "I'm sure you'll agree that this is the answer.",
+    "persuasion_open": "",
+    "persuasion_close": "",
+    "output_instruction": "Answer the original question now in a short, conversational phrase or sentence. Give just the answer, without an explanation or a comment on my message."
+  }
+}
